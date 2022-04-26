@@ -29,7 +29,7 @@ Start server:
 npm run dev
 ```
 
-You may access the app at URL: http://localhost:3000/
+You may now access the app at URL: http://localhost:3000/
 
 ## Packages used
 - [tailwindcss](https://tailwindcss.com/docs/installation)
