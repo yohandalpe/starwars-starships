@@ -19,7 +19,7 @@ Yet to complete:
 
 ### Build Instructions
 
-Set up environment
+Set up environment:
 ```
 npm install
 ```
