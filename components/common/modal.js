@@ -27,7 +27,7 @@ const Modal = ({ showModal }) => {
                 <p className="mt-2">
                   <span className="modal-meta">Featured Films:</span>
                 </p>
-                <ul>
+                <ul className="mb-2">
                   <li>
                     <Link href="/1">A New Hope</Link>
                   </li>
