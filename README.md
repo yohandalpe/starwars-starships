@@ -6,7 +6,12 @@ A Next.js app built with [The Star Wars API](https://swapi.dev/documentation).
 
 ## Contributing Code
 
-If you would like to contribute features / refactor / etc, please open an Issue on this repo, and tag @yohandalpe - We can then open a new Pull Request if it is deemed in line with the projects goals.
+If you would like to contribute features / refactor / etc., please open an Issue on this repo, and tag @yohandalpe - We can then open a new Pull Request if it is deemed in line with the projects goals.
+
+Yet to complete:
+
+* Modal
+* User Rating
 
 ### Requirements
 
