@@ -1,3 +1,126 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* importing fonts */
+@font-face {
+  font-family: "Roboto";
+  src: url("../public/fonts/Roboto-Regular.ttf");
+}
+
+@font-face {
+  font-family: "RopaSans";
+  src: url("../public/fonts/RopaSans-Regular.ttf");
+}
+
+@layer base {
+  /* base styles */
+  html {
+    @apply font-roboto;
+  }
+  body {
+    @apply text-white bg-black bg-no-repeat bg-cover bg-center bg-fixed;
+    background-image: url('../public/images/background.webp');
+  }
+  h1,h2,h3,h4,h5,h6 {
+    @apply font-ropasans font-bold;
+  }
+  h1 {
+    @apply text-4xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  a {
+    @apply hover:text-amber-500
+  }
+}
+
+@layer components {
+
+  /* container styles */
+  .container-header {
+    @apply flex justify-center py-5;
+  }
+  .container-main {
+    @apply container mx-auto px-4;
+  }
+  .container-main-wrapper {
+  @apply flex justify-center pt-10 pb-14 ;
+  }
+  .container-modal {
+    @apply flex h-screen justify-center items-center;
+  }
+
+  /* search bar styles */
+  .form-search {
+    @apply form-input px-4 py-3 rounded-full border-2 border-amber-500 bg-stone-800 w-2/5 focus:ring-amber-400 focus:border-amber-400;
+  }
+  .button-search {
+    @apply bg-stone-800 text-white hover:bg-amber-500 hover:text-stone-800 border-2 border-amber-500 mx-3 font-bold py-3 px-5 rounded-full;
+  }
+
+  /* pagination styles */
+  .container-pagination {
+    @apply flex items-center justify-center space-x-1 pb-10 pt-16;
+  }
+  .link-pagination {
+  @apply px-4 py-2 border-2 border-amber-500 text-white bg-stone-800  rounded-lg hover:bg-amber-500 hover:text-stone-800;
+  }
+  .active-page > a {
+    @apply text-stone-800 bg-amber-500;
+  }
+
+  /* card and modal styles */
+  .card {
+    @apply border-2 border-amber-500 bg-stone-800 rounded-lg;
+  }
+  .card-base {
+    @apply hover:shadow-md hover:shadow-stone-500 hover:cursor-pointer
+    hover:border-amber-500 transition hover:scale-105 p-4;
+  }
+  .card-large {
+    @apply w-1/2 p-12;
+  }
+  .card .card-title,
+  .modal .modal-title {
+    @apply mb-4 font-bold text-gray-100;
+  }
+  .card .card-meta,
+  .modal .modal-meta {
+    @apply font-ropasans font-bold text-lg;
+  }
+  .card .card-rating {
+    @apply mt-3 text-xl;
+  }
+  .card .card-footer {
+    @apply inline-flex items-end;
+  }
+  .button-action {
+    @apply hover:text-amber-500 hover:cursor-pointer;
+  }
+  .modal {
+    @apply justify-center  border-2 border-amber-500 bg-stone-800 rounded-lg;
+  }
+  .modal-large {
+    @apply p-12 w-1/2;
+  }
+  .modal-overlay {
+    @apply bg-black bg-opacity-80 fixed inset-0 z-50;
+  }
+  .button-modal-close {
+    @apply text-white float-right;
+  }
+
+  /* footer styles */
+  .footer-wrapper {
+  @apply container px-4 pb-4 mx-auto;
+  }
+
+  .footer-copyright-text {
+  @apply text-center text-xs text-gray-500;
+  }
+}
